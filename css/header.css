@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&family=Rubik+Mono+One&display=swap');
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+}
+.header > .inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* 모바일 메뉴======================================================================================== */
+.m_o_m {
+  height: 100%;
+  display: none;
+}
+.m_o_m > .m_menu_btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-bottom: 14px;
+}
+.m_o_m > .m_menu_btn > span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+.m_o_m > .m_menu_btn > span:first-of-type {
+  top: 0;
+  left: 0;
+}
+.m_o_m > .m_menu_btn > span:nth-of-type(2) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.m_o_m > .m_menu_btn > span:last-of-type {
+  bottom: 0;
+  left: 0;
+}
+/* 헤더 로고 */
+.h_logo {
+  height: 100%;
+  /* background-color: black; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -36%);
+  font-family: 'Rubik Mono One', serif;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 1px 0 #db8db8, 0 2px 0 #db8db8, 0 3px 0 #d4a1bd, 0 4px 0 #dbadc7, 0 5px 0 #e6d2dd,
+    0 50px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 헤더 기본 메뉴 */
+.o_m {
+  background-color: rgba(0, 0, 0, 0);
+}
+.o_m > ul {
+  height: 100%;
+  display: flex;
+  gap: 14px;
+  align-items: flex-end;
+}
+.o_m > ul > li {
+  width: 50px;
+  height: 38px;
+  /* background-color: blueviolet; */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.o_m > ul > li > a {
+  font-size: 18px;
+  font-weight: 550;
+  color: #fff;
+  position: relative;
+}
+.o_m > ul > li > a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  background-color: rgb(255, 127, 227);
+  transition: width 0.2s ease-in-out;
+}
+.o_m > ul > li > a:hover::after {
+  width: 100%;
+}
+
+/* 헤더 아이콘 메뉴 */
+.i_m {
+  background-color: rgba(0, 0, 0, 0);
+}
+.i_m > ul {
+  height: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+.i_m > ul > li {
+  margin-bottom: 8px;
+  /* background-color: blueviolet; */
+  color: #fff;
+  justify-content: center;
+}
+.i_m > ul > li > a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.i_m > ul > li > a > img {
+  width: 24px;
+  filter: invert(100%);
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+  .o_m {
+    display: none;
+  }
+  .m_o_m {
+    display: flex;
+    align-items: flex-end;
+  }
+  .h_logo {
+    font-size: 40px;
+    transform: translate(-50%, -30%);
+  }
+}
+@media screen and (max-width: 420px) {
+  .header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+  }
+  .h_logo {
+    font-size: 28px;
+    transform: translate(-50%, -30%);
+  }
+  .header > .inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+  }
+}
