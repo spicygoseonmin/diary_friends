@@ -39,7 +39,7 @@
                   <img src="images/icons/alram.png" alt="알람아이콘" />
                 </a>
               </li>
-              <li>
+              <li class="main_login">
                 <a href="login.html"> 로그인 </a>
               </li>
             </ul>
@@ -52,27 +52,40 @@
         <div class="visual">
           <img src="images/visual4.jpg" alt="비주얼이미지" />
         </div>
-        <!-- 최근글 -->
-        <div class="new">
-          <!-- 전체 글 랩 -->
-          <ul class="n_m_wrap_ul">
-            <!-- 낱개 랩 -->
-            <li>
-              <ul class="n_u_wrap_ul">
+        <!-- 포스트 영역 -->
+        <div class="post_zone">
+          <!-- 최근글 -->
+          <div class="inner">
+            <div class="new">
+              <!-- 최신글 제목 -->
+              <div class="new_title">
+                <h2>최신글</h2>
+                <a href="#">더보기</a>
+              </div>
+              <!-- 전체 글 랩 -->
+              <ul class="n_m_wrap_ul">
+                <!-- 낱개 랩 -->
                 <li>
-                  <a href="#">글쓴이</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <p>글 내용0000000000</p>
-                    <p>날짜</p>
-                    <p>조회순</p>
-                    <p>댓글</p>
-                  </a>
+                  <ul class="n_u_wrap_ul">
+                    <li class="writer">
+                      <a href="#">글쓴이</a>
+                    </li>
+                    <li class="post_ps">
+                      <a href="#">
+                        <p>글 내용0000000000</p>
+                        <div class="p_etx_info">
+                          <p>날짜</p>
+                          <p>조회순</p>
+                          <p>댓글</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
+            </div>
+            <div class="topic_lines"></div>
+          </div>
         </div>
       </div>
       <!-- 푸터  -->

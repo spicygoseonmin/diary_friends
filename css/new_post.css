@@ -1,2 +1,42 @@
 @charset "utf-8";
-.n_m_wrap_ul{}
+
+
+.post_zone {
+  position: relative;
+  display: block;
+}
+.post_zone > .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new {
+  width: 100%;
+}
+.topic_lines {
+  width: 100%;
+}
+
+.new_title {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 4px 0 4px 0;
+}
+.n_m_wrap_ul > li {
+  width: 100%;
+  padding: 3px 0 3px 0;
+  border-bottom: 1px solid #ccc;
+}
+.n_u_wrap_ul {
+  width: 100%;
+  display: flex;
+}
+.n_u_wrap_ul > .post_ps > a {
+  display: flex;
+}
+.p_etx_info{
+    display: flex;
+    gap: 10px;
+}

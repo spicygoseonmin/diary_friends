@@ -96,6 +96,9 @@
 }
 
 /* 헤더 아이콘 메뉴 */
+.main_login > a{
+  color: #fff;
+}
 .i_m {
   background-color: rgba(0, 0, 0, 0);
 }
